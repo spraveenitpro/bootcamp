@@ -1,4 +1,4 @@
-var apiroot = "https://woocommerce.mystagingwebsite.com/wp-json";
+var apiroot = "https://wp.local/wp-json";
 var articleContainer = document.querySelector("main#main");
 var listPosts = {};
 
@@ -27,11 +27,10 @@ listPosts.init = function() {
 listPosts.init();
 
 /**
- * render - Display posts on the page
+ *render - Display posts on the page
  *
- *  @param {Array} posts Array of Posts in JSON
+ * @param {*} posts
  */
-
 listPosts.render = function(posts) {
   for (let post of posts) {
     listPosts.renderPost(post);

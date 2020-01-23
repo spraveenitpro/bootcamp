@@ -1,8 +1,10 @@
 // Set state object with values that are changed programatically
 const state = {
-  restUrl: "https://woocommerce.mystagingwebsite.com/wp-json/",
-  siteName: "Name of the Site",
-  siteDescription: "Another Decoupled Site",
+  loggedIn: false,
+  restUrl: "https://wp.local/wp-json/",
+  token: "wp-token",
+  siteName: "Site Name",
+  siteDescription: "Just another decoupled site",
   posts: null,
   post: null
 };
@@ -15,6 +17,4 @@ const state = {
 const setState = (toSet, newValue) => {
   state[toSet] = newValue;
 };
-
-//setState("restUrl", "google.com");
 export { state, setState };
